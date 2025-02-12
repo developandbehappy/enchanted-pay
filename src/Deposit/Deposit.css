@@ -1,0 +1,174 @@
+.Deposit {
+    height: 100%;
+    padding: 20px;
+}
+
+.DepositTitle {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.DepositBody {
+    height: 87%;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(rgba(40, 41, 51, 0.85), rgba(50, 43, 42, 0.98)), url("logo.webp") no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.DepositBodyElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.DepositBodyElementsItemSingle {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.DepositBodyElementsItemQuick {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.DepositBodyElementsItemQuickElement {
+    display: flex;
+    padding: 10px 16px;
+    background-color: #3f3a3b;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.DepositBodyElementsItemQuickElement:hover {
+    background-color: #454040;
+}
+
+.DepositBodyElementsItemQuickElementIcon {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+}
+
+.DepositBodyElementsItem {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.DepositBodyElementsItemConnect {
+    zoom: 0.75;
+}
+
+.DepositBtns {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 22px;
+
+}
+
+.DepositBodyElementsItemCustomField {
+    width: 100%;
+    height: 40px;
+    background-color: #4c4647;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding-left: 12px;
+    padding-right: 6px;
+    -moz-appearance:textfield;
+}
+
+.DepositBodyElementsItemCustomField:disabled {
+    background: #716d6d;
+    color: #a2a2a2;
+    cursor: no-drop;
+}
+
+.DepositBodyElementsItemCustom {
+    position: relative;
+}
+
+
+.DepositSmallDescription {
+    font-size: 10px;
+    margin-top: 4px;
+    color: #aaa;
+}
+
+
+.DepositBodyElementsItemCustomFieldIcon {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 22px;
+    height: 22px;
+    pointer-events: none;
+}
+
+.EditIcon {
+    color: #c59345;
+    background: #3f3a3b;
+    height: 100%;
+    width: 40px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    pointer-events: inherit;
+}
+
+.DepositBodyElementsItemCustomField::-webkit-outer-spin-button,
+.DepositBodyElementsItemCustomField::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.DepositBodyElementsItemCustomField:focus {
+    outline: none;
+}
+
+
+.DepositBtns .Active {
+    color: #C49345;
+}
+
+.DepositBtnsItem {
+    padding: 8px;
+}
+
+.DepositBtn {
+    padding: 10px 20px;
+    background-color: #3f3a3b;
+    color: #c59345;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.DepositBtn:hover, .EditIcon:hover {
+    background-color: #4c4647;
+}

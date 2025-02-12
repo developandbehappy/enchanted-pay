@@ -1,0 +1,13 @@
+.App {
+  background: #000;
+  text-align: center;
+  width: 375px;
+  height: 650px;
+  margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease-in;
+  transform-origin: 50% 0;
+}
+
+
