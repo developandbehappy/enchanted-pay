@@ -8,7 +8,7 @@ import {
   faPencil,
   faClose,
 } from "@fortawesome/free-solid-svg-icons";
-import { createConnectionCompletedEvent, TonConnectButton, useTonConnectUI, useTonWallet } from '@tonconnect/ui-react';
+import { TonConnectButton, useTonConnectUI, useTonWallet } from '@tonconnect/ui-react';
 import { useEffect, useState, useRef } from 'react';
 import { beginCell } from '@ton/core';
 
@@ -53,7 +53,7 @@ function getTx(uniqId, count) {
 
 
 function Deposit() {
-  const [tonConnectUI, setOptions] = useTonConnectUI();
+  const [tonConnectUI] = useTonConnectUI();
   const inputRef = useRef();
   const wallet = useTonWallet();
   const [isDisabledBtnEditUniq, changeDisabledBtnEditUniq] = useState(true);
@@ -137,7 +137,7 @@ function Deposit() {
                     {quickDeposit.map((count) => {
                       return (
                         <div key={count} onClick={async () => {
-                            const res = await sendTransaction(count);
+                            await sendTransaction(count);
                           }} className="DepositBodyElementsItemQuickElement">
                           <div>{count}</div>
                           <div className="DepositBodyElementsItemQuickElementIcon" dangerouslySetInnerHTML={{__html: TG_ICON}}></div>
@@ -158,7 +158,7 @@ function Deposit() {
                     <div className="DepositBodyElementsItemCustomFieldIcon" dangerouslySetInnerHTML={{__html: TG_ICON}}></div>
                 </div>
                 <div className="DepositBtn" onClick={async () => {
-                  const res = await sendTransaction(customValue);
+                  await sendTransaction(customValue);
                 }}>
                   Пополнить
                 </div>
