@@ -2,7 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
 
+
+input:disabled {
+  /* Сброс стандартных стилей */
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  -webkit-text-fill-color: #333 !important;
 }
 
 html, body {
